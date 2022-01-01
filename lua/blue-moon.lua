@@ -245,13 +245,17 @@ local plugin_syntax = {
   -- TSURI                  = {},
 
   -- nvim-cmp
-  CmpItemAbbr = { fg = white },
+  CmpItemAbbr = { fg = fg_dark },
+  CmpItemAbbrMatch = { fg = blue },
+  CmpItemAbbrMatchFuzzy = { fg = fg_light },
   CmpItemAbbrDeprecated = { fg = red },
-  CmpItemAbbrMatch = { fg = white },
-  CmpItemAbbrMatchFuzzy = { fg = cyan },
   -- TODO: not sure where this goes
   CmpItemKind = { fg = cyan, gui = 'bold' },
   CmpItemMenu = { fg = cyan },
+
+  CmpItemAbbrMatchFuzzyDefault = { fg = fg_light },
+  CmpItemAbbrDefault = { fg = fg_dark },
+  CmpItemAbbrMatchDefault = { fg = blue },
 }
 
 -- }}}
